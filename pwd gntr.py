@@ -1,4 +1,4 @@
-import random
+import secrets
 print("Program to Generate a Random Password")
 name=input("Enter your Name: ")
 print("Hey "+name)
@@ -10,5 +10,5 @@ if length < 6:
     print("Password length should be greater than 6 letters") 
 else:
     for i in range(length):
-        password += random.choice(pwd)    
+        password += secrets.choice(pwd)    
 print(password)
